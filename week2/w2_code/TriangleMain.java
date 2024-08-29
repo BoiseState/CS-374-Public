@@ -1,7 +1,7 @@
 package week2.w2_code;
 
 import code.TriangleClassifier;
-//import code.TriangleClassifierFaulty;
+import code.TriangleClassifierFaulty;
 
 /*Code example showing how
  * to use TriangleClassifier
@@ -19,9 +19,9 @@ public class TriangleMain {
 		type = TriangleClassifier.classify(5, 5, 3);
 		System.out.println(type == 0);
 		
-//		int type1 = 1;
-//		type1 = TriangleClassifierFaulty.classify(5, 5, 5);
-//		System.out.println(type1 == 0);
+		int type1 = 1;
+		type1 = TriangleClassifierFaulty.classify(5, 5, 5);
+		System.out.println(type1 == 0);
 	}
 
 }
