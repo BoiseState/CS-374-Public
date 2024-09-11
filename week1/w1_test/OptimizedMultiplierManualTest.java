@@ -22,4 +22,16 @@ public class OptimizedMultiplierManualTest {
 		
 	}
 
+	@Test
+	public void tc2() {
+		BigInteger bi1 = new BigInteger("-886421817479149");
+		BigInteger bi2 = new BigInteger("952669276698546");
+
+		BigInteger ret1 = OptimizedMultiplier.fastMultiply(bi1, bi2);
+		BigInteger ret2 = OptimizedMultiplier.standardMultiply(bi1, bi2);
+
+		assertEquals(0,ret1.compareTo(ret2));
+
+	}
+
 }
